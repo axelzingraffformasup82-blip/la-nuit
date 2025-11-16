@@ -1,0 +1,22 @@
+section {
+  width: 100%;
+  min-height: 100vh;
+}
+
+section.hero {
+  background-image: linear-gradient(
+      rgb(52, 96, 145),
+      rgba(52, 95, 145, 0.25),
+      rgba(50, 78, 133, 0),
+      rgb(50, 78, 133, 0.25),
+      rgb(50, 78, 133)
+    ),
+    url("/images/moon&sun.jpg");
+  background-position: center;
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #262121;
+}
