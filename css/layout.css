@@ -19,12 +19,20 @@ body {
 
 header {
   width: 100%;
-  height: fit-content;
+  height: 12vh;
   background-color: rgb(52, 96, 145);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: antiquewhite;
 }
 
 footer {
   width: 100%;
   height: 10vh;
-  background-color: aqua;
+  background-color: rgb(52, 96, 145);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: antiquewhite;
 }

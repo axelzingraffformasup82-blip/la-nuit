@@ -1,22 +1,132 @@
 section {
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 section.hero {
+  background-size: cover;
+  background-position: center top;
+  /* background-repeat: no-repeat; */
   background-image: linear-gradient(
       rgb(52, 96, 145),
-      rgba(52, 95, 145, 0.25),
+      rgba(52, 95, 145, 0.5),
       rgba(50, 78, 133, 0),
       rgb(50, 78, 133, 0.25),
       rgb(50, 78, 133)
     ),
     url("/images/moon&sun.jpg");
-  background-position: center;
-  background-size: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #262121;
+  color: antiquewhite;
+  text-shadow: 0.1em 0.1em 0.5em antiquewhite;
+}
+
+section.hero h1 {
+  text-transform: uppercase;
+  /* text-shadow: 0vw 0vw 2vh antiquewhite; */
+}
+
+section.hero h2 {
+  margin: 1em;
+}
+
+section.boulot .gestion-colonne {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section.boulot .gestion-colonne .colonne {
+  width: 40vw;
+  height: 40vh;
+  margin: 2vw;
+  background-color: rgb(52, 96, 145);
+  border-radius: 10px;
+  padding: 1%;
+  box-shadow: 2vw 2vw 2vw rgba(43, 48, 122, 0.4);
+  border-color: rgb(25, 30, 105, 0.3);
+  border-style: groove;
+}
+
+section.boulot .gestion-colonne .colonne-img {
+  width: 40vw;
+  height: 40vh;
+  margin: 2vw;
+  background-color: rgb(52, 96, 145);
+  border-radius: 10px;
+  padding: 1%;
+  box-shadow: 2vw 2vw 2vw rgba(43, 48, 122, 0.4);
+  border-color: rgb(25, 30, 105, 0.3);
+  border-style: groove;
+}
+
+section.boulot .gestion-colonne .colonne h2 {
+  width: fit-content;
+  text-shadow: 0.05em 0.05em 0.1em rgb(25, 30, 105);
+  background-color: rgb(58, 100, 133);
+  border-radius: 10px;
+  padding: 1%;
+  color: rgb(184, 118, 141);
+  text-transform: uppercase;
+  box-shadow: 0.2em 0.2em 0.5em rgb(25, 30, 105, 0.5);
+  border-color: rgb(25, 30, 105, 0.2);
+  border-style: groove;
+}
+
+section.boulot .gestion-colonne .colonne p {
+  padding: 2%;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: antiquewhite;
+}
+
+section.boulot .gestion-colonne .colonne-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+section.boulot .gestion-colonne .colonne-img:hover {
+  transform: scale(1.05);
+  transition: 1s ease-in-out;
+}
+
+section.dodo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: antiquewhite;
+}
+
+section.dodo h2 {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0 rgb(184, 118, 141), 1px -1px 0 rgb(184, 118, 141),
+    -1px 1px 0 rgb(184, 118, 141), 1px 1px 0 rgb(184, 118, 141);
+}
+
+section.dodo p {
+  margin-top: 2rem;
+  color: rgb(184, 118, 141);
+  font-weight: bold;
+  font-style: italic;
+}
+
+section.dodo .st {
+  text-transform: uppercase;
+  font-size: 5em;
+  font-weight: bold;
+  background: url(/images/milky-way.jpg);
+  background-size: cover;
+  background-clip: text;
+  background-position: center;
+  -webkit-background-clip: text;
+  color: transparent;
 }
