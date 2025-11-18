@@ -1,8 +1,7 @@
-const menuburgerItemHeaders = document.querySelectorAll(
-  ".menuburger-item-header"
-);
-menuburgerItemHeaders.forEach(menuburgerItemHeader =>) {
-  menuburgerItemHeaders.addEventListener("click", event =>) {
-    menuburgerItemHeader.classList.toggle("active");
-  }
-}
+// const burgerMenu = document.querySelector(".burgermenu");
+// const burgerPannel = document.querySelector(".burgerpannel");
+
+// burgerMenu.addEventListener("click", () => {
+//   burgerMenu.classList.toggle("active");
+//   burgerPannel.classList.toggle("active");
+// });
