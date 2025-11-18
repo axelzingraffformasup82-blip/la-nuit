@@ -6,7 +6,7 @@ section {
 section.hero {
   background-size: cover;
   background-position: center top;
-  /* background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
   background-image: linear-gradient(
       rgb(52, 96, 145),
       rgba(52, 95, 145, 0.5),
