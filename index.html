@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="/js/scripts.js"></script>
+   <!-- tu avais chargé ton script ici. Je l'ai déplacé tout en bas avant de fermer body et ça marche.
+   Si tu voulais le charger ici il faudrait ajouter "defer" dans la balise script pour un script chargé dans le head mais qui agit sur des éléments du body
+   -->
     <link rel="stylesheet" href="css/application.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,14 +23,14 @@
             <li><a href="#">eazer</a></li>
           </ul>
         </nav> -->
-        <script>
+        <!-- <script>
           function inlineDégueulasseTantPis() {
             let element = document.querySelector("div.burgerpannel");
             element.classList.toggle("active");
             let element2 = document.querySelector("div.burgermenu");
             element2.classList.toggle("active");
           }
-        </script>
+        </script> -->
         <div class="burgerpannel">
           <ul>
             <li>UwU</li>
@@ -36,7 +38,8 @@
             <li>^w^</li>
           </ul>
         </div>
-        <nav class="burger" onclick="inlineDégueulasseTantPis()">
+        <!-- <nav class="burger" onclick="inlineDégueulasseTantPis()"> -->
+        <nav class="burger">
           <div class="burgermenu">
             <span></span>
             <span></span>
@@ -97,5 +100,8 @@
         </footer>
       </main>
     </div>
+
+     <script src="/js/scripts.js"></script>
+
   </body>
 </html>
