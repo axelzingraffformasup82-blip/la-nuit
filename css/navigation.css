@@ -14,7 +14,7 @@
 .burgermenu span {
   height: 1vh;
   width: 100%;
-  background-color: rgb(226, 131, 43);
+  background-color: rgb(177, 62, 149);
   border-radius: 5vh;
   position: absolute;
   top: 50%;
@@ -33,6 +33,7 @@
 .burgermenu.active span:nth-child(1) {
   top: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
+  background-color: rgb(217, 121, 70);
 }
 
 .burgermenu.active span:nth-child(2) {
@@ -42,28 +43,29 @@
 .burgermenu.active span:nth-child(3) {
   top: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
+  background-color: rgb(217, 121, 70);
 }
 
 .burgerpannel {
-  background-color: #fff;
+  background-color: wheat;
   height: 30vh;
-  width: 30vw;
+  width: 30vh;
   position: fixed;
-  top: -30vw;
-  right: -120vw;
+  top: -30vh;
+  right: -30vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 2.5rem;
-  transition: 1 ease;
+  transition: 1s ease;
   border-radius: 1vh;
 }
 
 .burgerpannel.active {
-  top: 0;
-  right: 0;
+  top: 10vh;
+  right: 10vh;
 }
 
 nav ul {

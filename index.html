@@ -10,7 +10,6 @@
   <body>
     <div class="container">
       <header>
-        <button>a</button>
         <div class="logo">
           <img src="/images/logo-nuit.png" alt="la nuit" />
         </div>
@@ -23,12 +22,11 @@
           </ul>
         </nav> -->
         <script>
-          function InlineDégueulasseTantPis() {
-            var element = document.getElementByClass(
-              ".burgermenu",
-              ".burgerpannel"
-            );
+          function inlineDégueulasseTantPis() {
+            let element = document.querySelector("div.burgerpannel");
             element.classList.toggle("active");
+            let element2 = document.querySelector("div.burgermenu");
+            element2.classList.toggle("active");
           }
         </script>
         <div class="burgerpannel">
@@ -38,7 +36,7 @@
             <li>^w^</li>
           </ul>
         </div>
-        <nav class="burger" onclick="InlineDégueulasseTantPis()">
+        <nav class="burger" onclick="inlineDégueulasseTantPis()">
           <div class="burgermenu">
             <span></span>
             <span></span>
